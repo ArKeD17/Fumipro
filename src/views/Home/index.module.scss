@@ -1,0 +1,308 @@
+.banner {
+  min-height: 400px;
+  min-width: 100%;
+  background-position: center;
+  // background-clip: url("/src/assets/video/banner.mp4");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.logo_fumipro_container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo_fumipro_container img {
+  max-width: 27%;
+}
+
+.banner_black {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.logo {
+  position: relative;
+  color: white;
+  min-height: 400px;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_img {
+  max-height: 175px;
+}
+
+.banner_text {
+  padding-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: bannerTextMove 2s 1;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+}
+
+.container_restaurants {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
+
+.margin_buttom {
+  margin-bottom: 4%;
+}
+
+.margin_top_and_bottom {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.margin_right_4 {
+  margin-right: 4%;
+}
+
+.title {
+  min-width: 100%;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 350px;
+  }
+}
+
+.paper_galery {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  background-color: black;
+}
+
+.container_slider_and_title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_galery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.container_comments {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+// Video Backgorund
+
+.my_video {
+  // position: absolute;
+  // top: 0;
+  // left: 39.5%;
+  // max-height: 400px;
+  min-width: 25%;
+  min-height: 400px;
+}
+
+.video_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  object-position: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.video_flex_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (max-width: 500px) {
+  .logo_img {
+    max-height: 150px;
+  }
+  .container_restaurants {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6%;
+  }
+  .container {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+      width: 250px;
+    }
+  }
+
+  .container_comments {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .my_video {
+    // position: absolute;
+    // top: 0;
+    // left: 39.5%;
+    // max-height: 400px;
+    min-width: 100%;
+    min-height: 400px;
+  }
+
+  .video_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    object-position: center;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .video_flex_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .container_restaurants {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .logo_fumipro_container img {
+    max-width: 50%;
+  }
+}
+
+//animaciones
+
+.icon_animation {
+  animation: myicon 0.6s infinite alternate;
+  animation-delay: 4s;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+.logo_animation {
+  animation: bannerLogoMove 2s 1;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+.text_logo {
+  color: transparent;
+  text-align: center;
+  animation: text_logo 3s 1;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  position: relative;
+  overflow: hidden;
+  margin: 0%;
+}
+
+@keyframes myicon {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    top: 13px;
+  }
+}
+
+@keyframes bannerTextMove {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes bannerLogoMove {
+  from {
+    bottom: -50px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+@keyframes text_logo {
+  from {
+    color: transparent;
+  }
+  to {
+    color: black;
+  }
+}

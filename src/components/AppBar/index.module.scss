@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container img{
+  width: 35px;
+  margin-right: 10px;
+}
+
+
+.logo {
+  width: 64px;
+  margin: 5px;
+}
+
+.banner {
+  width: 250px;
+}
+
+.container_btn {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 40px;
+  }
+}
+
+.prueba {
+  display: flex;
+  align-items: center;
+  animation: myprueba 2s 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes myprueba {
+  from {
+    color: transparent;
+    display: none;
+  }
+  to {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+}

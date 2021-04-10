@@ -1,0 +1,31 @@
+.container_img{
+  display: flex !important;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px 40px 40px 40px;
+  width: 400px; 
+  img{
+    width: 350px;
+    height: 400px;
+  }
+}
+
+.slick-next:before, .slick-prev:before {
+  color: #000;
+}
+
+
+@media (max-width: 700px) {
+  .container {
+    margin: 0 auto;
+    padding: 0px 40px 40px 40px;
+    width: 400px; 
+    img{
+      width: 250px;
+      height: 300px;
+    }
+  }
+}
